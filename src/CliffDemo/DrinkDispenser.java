@@ -36,4 +36,16 @@ public class DrinkDispenser {
         }
         syrups.get(sirupI).dispense(volume);
     }
+
+    public void addSyrup(Syrup newSyrup) {
+        syrups.add(newSyrup);
+    }
+
+    public void addSyrup(String name, int vol) {
+        syrups.add(new Syrup(name, vol));
+    }
+
+
+
+
 }
